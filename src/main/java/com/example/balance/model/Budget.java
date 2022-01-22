@@ -11,7 +11,7 @@ public class Budget {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private int id;
     private String type;
     private String category;
     private float value;
@@ -19,11 +19,11 @@ public class Budget {
     private String memo;
 
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 

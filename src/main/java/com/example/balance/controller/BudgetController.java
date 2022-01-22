@@ -4,10 +4,7 @@ package com.example.balance.controller;
 import com.example.balance.model.Budget;
 import com.example.balance.service.BudgetService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,9 +25,14 @@ public class BudgetController extends BaseController {
     }
 
     @PostMapping("/budget")
-    public Budget saveDepartment(@RequestBody Budget budget)
-    {
+    public Budget saveDepartment(@RequestBody Budget budget) {
         return budgetService.saveBudget(budget);
     }
 
+    @DeleteMapping("/budget/{id}")
+    public String deleteDepartmentById(@PathVariable("id")
+                                                   int budgetId) {
+        budgetService.deleteBudget(budgetId);
+        return "Deleted Successfully";
+    }
 }

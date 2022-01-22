@@ -6,9 +6,13 @@ import java.util.List;
 
 public interface BudgetService {
 
+    // Add operation
     Budget saveBudget(Budget budget);
 
     // Read operation
     List<Budget> fetchAll();
+
+    // Delete operation
+    void deleteBudget(int id);
 
 }

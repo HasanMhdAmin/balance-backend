@@ -22,4 +22,9 @@ public class BudgetServiceImpl implements BudgetService {
     public List<Budget> fetchAll() {
         return budgetRepository.findAll();
     }
+
+    @Override
+    public void deleteBudget(int id) {
+        budgetRepository.deleteById(id);
+    }
 }
