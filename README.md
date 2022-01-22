@@ -17,3 +17,9 @@ Spring boot project with MySQL database.
 
 **OR** run directly from IntelliJ IDEA.
 
+
+You can access the API from:
+- _GET_ `http://localhost:7777/api/budget`
+- _POST_ `http://localhost:7777/api/budget`
+- _DELETE_ `http://localhost:7777/api/budget`
+
