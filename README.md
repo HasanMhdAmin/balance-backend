@@ -1,5 +1,5 @@
 # Balance-backend
-Spring boot project with MySQL database.
+Spring boot project as backend with MySQL database for this project https://github.com/HasanMhdAmin/balance-web/tree/backend-connection.
 
 ## Preparation
 - Create new MySQL database.
