@@ -3,7 +3,7 @@ Spring boot project with MySQL database.
 
 ## Preparation
 - Create new MySQL database.
-- Change DB connection string in `application.properties`
+- Change DB connection string in `src/main/resources/application.properties`
 - No need to create tables, the tables will be created automatically after running the application.
 
 ## Run
